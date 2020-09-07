@@ -152,7 +152,7 @@ function displayWeather() {
             sunSet.innerText = `Sunset: ${hourSunset}`;
             sunRise.innerText = `Sunrise: ${hourSunrise}`;
             cityWeather.innerText = `${nameCity}, ${cityData}`;
-          }).catch(err => alert(err));
+          }).catch(err => alert('Please Enter a Valid City'));
       })
 
   }
