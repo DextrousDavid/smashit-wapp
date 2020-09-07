@@ -1,0 +1,25 @@
+{
+    "name": "SmashIt-WApp",
+    "short_name": "SWA",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#eee",
+    "description": "A weather app.",
+    "icons": [
+        {
+            "src": "images/images(4).png",
+            "sizes": "225x225",
+            "type": "image/png"
+        },
+        {
+            "src": "images/images(5).png",
+            "sizes": "400x400",
+            "type": "image/png"
+        },
+        {
+            "src": "images/images(6).png",
+            "sizes": "225x225",
+            "type": "image/png"
+        }
+    ]
+}
