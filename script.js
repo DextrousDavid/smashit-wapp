@@ -121,7 +121,6 @@ function displayWeather() {
         sunRise.innerText = `Sunrise: ${hourSunrise}`;
         cityWeather.innerText = `${nameCity}, ${cityData}`;
       })
-      .catch(err => alert('Please Enter a Valid City'));
   } else {
     let lat;
     let long;
