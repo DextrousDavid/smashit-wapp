@@ -4,14 +4,14 @@
     }
 
     div.main {
-        margin-top: 20px;
+        margin-top: 15px;
     }
 
     div.global {
         width: 100%;
         padding: 5px;
     }
-    
+
     div.image {
         margin: 0;
     }
@@ -22,16 +22,16 @@
 }
 
 @media only screen and (max-width: 819px) {
-    
+
     div.global {
         width: 100%;
         padding: 10px;
     }
 
     div.main {
-        margin-top: 20px;
+        margin-top: 15px;
     }
-    
+
     h1#cityname {
         font-size: 30px;
     }
@@ -50,12 +50,12 @@
     div.image {
         margin: 0;
     }
-    
+
 }
 
 
 @media only screen and (max-width: 620px) {
-    
+
 
     div.main {
         display: flex;
@@ -124,44 +124,226 @@
     }
 }
 
+/* iphone 5/ SE */
+
 @media only screen and (max-width: 330px) {
-    
-    div.content {
-        margin-top: 40px;
+
+
+    div.main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    div.global {
+        width: 100%;
+        padding: 10px;
     }
 
     div.city {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
         margin-top: 10px;
+    }
+
+    div.content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column-reverse;
+        margin-top: 10px;
+    }
+
+    div.icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    div.clock {
+        margin-bottom: 20px;
     }
 
     h1#cityname {
         font-size: 20px;
+        margin-bottom: 5px;
     }
 
-    div.sun {
-        width: 100%;
-        padding: 2px;
+    p#days.time {
+        font-size: 10px;
     }
 
-    div.timer {
-        width: 100%;
+    div.icon {
+        padding: 5px;
     }
 
     p#watch.hour {
-        font-size: 25px;
+        font-size: 10px;
     }
 
-    p#desc.descDay {
-        font-size: 25px;
-    }
-
-    p#temperature.temperatureDay {
-        font-size: 25px;
+    p#sunset.sun-temp {
+        font-size: 10px;
+        margin: 5px 0 0 0;
         text-align: center;
     }
 
     p#sunrise.sun-temp {
-        margin-right: 57px;
+        font-size: 10px;
+        margin-top: 5px;
+        text-align: center;
+    }
+}
+
+
+/* //iPad pro Screen */
+@media only screen and (min-width:768px) {
+    div.main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding-top: 100px;
+    }
+
+    .cityInput {
+        margin-top: 10px;
+        width: 500px;
+    }
+    div.global {
+        width: 80%;
+        height: 200px;
+        padding: 10px;
+    }
+
+    div.city {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    div.content {
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column-reverse;
+        margin-top: 220px;
+    }
+
+    div.icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    h1#cityname {
+        font-size: 80px;
+    }
+
+    p#days.time {
+        font-size: 35px;
+    }
+
+    div.icon {
+        padding: 8px;
+        margin-bottom: 20px;
+        margin-top: 250px;
+    }
+
+    p#watch.hour {
+        font-size: 30px;
+    }
+
+    p#sunset.sun-temp {
+        font-size: 20px;
+        margin: 5px 0 0 0;
+        text-align: center;
+    }
+
+    p#sunrise.sun-temp {
+        font-size: 20px;
+        margin-top: 5px;
+        text-align: center;
+    }
+}
+
+/* For Desktop Screens */
+
+@media only screen and (min-width: 1600px) {
+    div.main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding-top: 100px;
+    }
+
+    .cityInput {
+        margin-top: 10px;
+        width: 250px;
+    }
+    div.global {
+        width: 80%;
+        height: 200px;
+        padding: 10px;
+    }
+
+    div.city {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    div.content {
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column-reverse;
+        margin-top: 220px;
+    }
+
+    div.icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    h1#cityname {
+        font-size: 50px;
+    }
+
+    p#days.time {
+        font-size: 18px;
+    }
+
+    div.icon {
+        padding: 8px;
+        margin-bottom: 20px;
+        margin-top: 60px;
+    }
+
+    p#watch.hour {
+        font-size: 30px;
+    }
+
+    p#sunset.sun-temp {
+        font-size: 20px;
+        margin: 5px 0 0 0;
+        text-align: center;
+    }
+
+    p#sunrise.sun-temp {
+        font-size: 20px;
+        margin-top: 5px;
         text-align: center;
     }
 }

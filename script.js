@@ -128,8 +128,8 @@ function displayWeather() {
 
     navigator.geolocation
       .getCurrentPosition(position => {
-        long = position.coords.latitue;
-        lat = position.coords.longitude;
+        long = position.coords.longitude;
+        lat = position.coords.latitude;
 
         const apiGeo = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=dc54e9560d229e536d7aa19db3f6b428`;
 
