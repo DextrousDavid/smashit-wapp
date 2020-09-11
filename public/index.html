@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SmashIt-WApp</title>
+
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/7.20.0/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/7.20.0/firebase-auth.js"></script>
+    <script defer src="/__/firebase/7.20.0/firebase-database.js"></script>
+    <script defer src="/__/firebase/7.20.0/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/7.20.0/firebase-storage.js"></script>
+    <!-- initialize the SDK after all desired features are loaded -->
+    <script defer src="/__/firebase/init.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Roboto:wght@300;400;500;700&display=swap"
+    rel="stylesheet">
+
+<link rel="stylesheet" href="queries.css">
+<link rel="stylesheet" href="style.css">
+<link rel="manifest" href="./manifest.webmanifest">
+  </head>
+  <body>
+    <section>
+      <div class="global">
+          <div class="main">
+              <div class="image">
+                  <div class="search" style="margin-top: 5px">
+                      <input class="cityInput" type="text" id="typedCity" placeholder="Type your State/City..">
+                      <button class="addBtn" id="addcity" onclick="addCity()"><span class="iconify"
+                              data-inline="false" data-icon="bx:bx-search-alt"></span></button>
+                  </div>
+              </div>
+              <div class="city">
+                  <h1 id="cityname"></h1>
+                  <p class="time" id="days"></p>
+              </div>
+          </div>
+          <div class="content">
+              <div class="icon">
+                  <div class="timer">
+                      <span class="iconify" data-inline="false" data-icon="et:clock"></span>
+                      <p class="hour" id="watch">11:25</p>
+
+                  </div>
+                  <div class="sun">
+                      <p class="sun-temp" id="sunrise"></p>
+                      <p class="sun-temp" id="sunset"></p>
+                  </div>
+              </div>
+              <div class="clock">
+                  <p class="descDay" id="desc"></p>
+                  <div class="icon-div" id="icons">
+                      <img src="" class="icon-weather">
+                  </div>
+                  <!--<span class="iconify" data-inline="false" data-icon="carbon:ibm-cloud" id="icon"></span>-->
+                  <p class="temperatureDay" id="temperature"></p>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
+  <script src="script.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+        // // The Firebase SDK is initialized and available here!
+        //
+        // firebase.auth().onAuthStateChanged(user => { });
+        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
+        // firebase.messaging().requestPermission().then(() => { });
+        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
+        //
+        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+
+        try {
+          let app = firebase.app();
+          let features = ['auth', 'database', 'messaging', 'storage'].filter(feature => typeof app[feature] === 'function');
+          document.getElementById('load').innerHTML = `Firebase SDK loaded with ${features.join(', ')}`;
+        } catch (e) {
+          console.error(e);
+          document.getElementById('load').innerHTML = 'Error loading the Firebase SDK, check the console.';
+        }
+      });
+    </script>
+  </body>
+</html>
