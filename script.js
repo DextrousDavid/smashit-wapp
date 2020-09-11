@@ -120,7 +120,7 @@ function displayWeather() {
         sunSet.innerText = `Sunset: ${hourSunset}`;
         sunRise.innerText = `Sunrise: ${hourSunrise}`;
         cityWeather.innerText = `${nameCity}, ${cityData}`;
-      })
+      }).catch(err => alert('Double reminder!, Enter a valid city!'))
   } else {
     let lat;
     let long;
@@ -150,7 +150,7 @@ function displayWeather() {
             tempIcon.innerHTML = `<img src="http://openweathermap.org/img/wn/${icon}@2x.png">`;
             sunSet.innerText = `Sunset: ${hourSunset}`;
             sunRise.innerText = `Sunrise: ${hourSunrise}`;
-            cityWeather.innerText = `${nameCity}, ${cityData}`;
+            cityWeather.innerText = `${cityData}`;
           }).catch(err => alert('Please Enter a Valid City'));
       })
 

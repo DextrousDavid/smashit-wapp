@@ -4,7 +4,7 @@
     }
 
     div.main {
-        margin-top: 15px;
+        margin-top: 5px;
     }
 
     div.global {
@@ -29,11 +29,11 @@
     }
 
     div.main {
-        margin-top: 15px;
+        margin-top: 5px;
     }
 
     h1#cityname {
-        font-size: 30px;
+        font-size: 20px;
     }
 
     div.content {
@@ -96,11 +96,11 @@
     }
 
     h1#cityname {
-        font-size: 25px;
+        font-size: 15px;
     }
 
     p#days.time {
-        font-size: 25px;
+        font-size: 17px;
     }
 
     div.icon {
@@ -174,12 +174,12 @@
     }
 
     h1#cityname {
-        font-size: 20px;
+        font-size: 17px;
         margin-bottom: 5px;
     }
 
     p#days.time {
-        font-size: 20px;
+        font-size: 15px;
     }
 
     div.icon {
@@ -212,7 +212,7 @@
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        padding-top: 20px;
+        padding-top: 5px;
         margin-bottom: -110px;
     }
 
@@ -240,7 +240,7 @@
         align-items: center;
         justify-content: center;
         flex-direction: column-reverse;
-        margin-top: 220px;
+        margin-top: 150px;
     }
 
     div.icon {
@@ -251,8 +251,8 @@
 
 
     h1#cityname {
-        margin-top: 70px;
-        font-size: 50px;
+        margin-top: 20px;
+        font-size: 40px;
     }
 
     p#days.time {
@@ -260,14 +260,13 @@
     }
 
     p#desc.descDay {
-        margin-top: -1000px;
+        margin-top: 100px;
         font-size: 30px;
     }
 
     div.icon {
         padding: 8px;
         margin-bottom: 20px;
-        margin-top: -300px;
     }
 
     p#watch.hour {
@@ -289,27 +288,26 @@
 
 /* For Desktop Screens */
 
-@media only screen and (min-width: 1100px) {
+@media only screen and (max-width: 1500px) {
     div.main {
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        padding-top: 50px;
+        padding-top: 2px;
+    
     }
 
-    .search {
-        margin-top: 10px;
-        width: 250px;
-    }
     div.global {
         width: 80%;
         padding: 10px;
     }
-    .search {
+
+    h1#cityname {
         margin-top: 10px;
-        width: 500px;
+        font-size: 2px;
     }
+
     div.city {
         display: flex;
         align-items: center;
@@ -317,12 +315,10 @@
         flex-direction: column;
     }
     div.content {
-
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column-reverse;
-        margin-top: 220px;
     }
 
     div.icon {
@@ -330,25 +326,26 @@
         align-items: center;
         justify-content: center;
     }
-
 
     h1#cityname {
         font-size: 50px;
     }
 
     p#days.time {
-        font-size: 25px;
+        font-size: 18px;
+        margin: 0;
     }
 
     div.icon {
         padding: 8px;
-        margin-bottom: 20px;
-        margin-top: 60px;
+        margin-bottom: 5px;
+        margin-top: 5px;
     }
 
     p#watch.hour {
         font-size: 30px;
     }
+
 
     p#sunset.sun-temp {
         font-size: 20px;
