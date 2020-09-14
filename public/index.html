@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -53,7 +53,7 @@
               <div class="clock">
                   <p class="descDay" id="desc"></p>
                   <div class="icon-div" id="icons">
-                      <img src="" class="icon-weather">
+                      <img src="" alt="icon weather" class="icon-weather">
                   </div>
                   <!--<span class="iconify" data-inline="false" data-icon="carbon:ibm-cloud" id="icon"></span>-->
                   <p class="temperatureDay" id="temperature"></p>
@@ -64,6 +64,11 @@
 
   <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
   <script src="script.js"></script>
+
+  <script>
+    localStorage.setItem("typedCity", 
+    "cityInput")
+  </script>
     <script>
       document.addEventListener('DOMContentLoaded', function() {
         // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥

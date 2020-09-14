@@ -116,7 +116,7 @@ function displayWeather() {
 
         temparatureDescription.innerText = `${temperature} ºC`;
         tempDescription.innerText = description;
-        tempIcon.innerHTML = `<img src="http://openweathermap.org/img/wn/${icon}@2x.png">`;
+        tempIcon.innerHTML = `<img src="http://openweathermap.org/img/wn/${icon}.png">`;
         sunSet.innerText = `Sunset: ${hourSunset}`;
         sunRise.innerText = `Sunrise: ${hourSunrise}`;
         cityWeather.innerText = `${nameCity}, ${cityData}`;
@@ -147,7 +147,7 @@ function displayWeather() {
 
             temparatureDescription.innerText = `${temperature} ºC`;
             tempDescription.innerText = description;
-            tempIcon.innerHTML = `<img src="http://openweathermap.org/img/wn/${icon}@2x.png">`;
+            tempIcon.innerHTML = `<img src="http://openweathermap.org/img/wn/${icon}.png">`;
             sunSet.innerText = `Sunset: ${hourSunset}`;
             sunRise.innerText = `Sunrise: ${hourSunrise}`;
             cityWeather.innerText = `${cityData}`;
